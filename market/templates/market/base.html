@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +33,15 @@
     </header>
 
     <main class="container mt-4">
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        {% block content %}
+
+        <!-- Content Goes here -->
+
+
+        {% endblock %}
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
     </main>
 
     <footer class="bg-dark text-center text-white py-3 mt-4">
