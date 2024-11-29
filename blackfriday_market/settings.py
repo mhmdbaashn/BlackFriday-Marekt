@@ -33,6 +33,9 @@ ALLOWED_HOSTS = ['8000-mhmdbaashn-blackfridaym-hduj4lpah5c.ws.codeinstitute-ide.
                  '.herokuapp.com'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+'https://*.codeinstitute-ide.net',
+'https://*.herokuapp.com']
 
 # Application definition
 
