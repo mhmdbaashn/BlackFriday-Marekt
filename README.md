@@ -38,7 +38,7 @@
 The target audience for BlackFriday Market consists of:
 * **Online Shoppers:** Individuals who prefer shopping online, especially during high-demand sale events like Black Friday.
 * **Bargain Hunters:** People looking to take advantage of special offers, discounts, and promotions typically available during Black Friday.
-* * **Tech-Savvy Consumers:** Those who are comfortable with navigating e-commerce platforms and expect a smooth, secure online shopping experience.
+*  **Tech-Savvy Consumers:** Those who are comfortable with navigating e-commerce platforms and expect a smooth, secure online shopping experience.
 **First-Time Online Shoppers:** Users who are new to online shopping and want a simple, easy-to-navigate platform for their first experience.
 
 
