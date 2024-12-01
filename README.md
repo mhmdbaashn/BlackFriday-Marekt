@@ -32,13 +32,13 @@
 <br>
 
 ## Purpose and Target Audience:
-***
+
  The project aims to provide an attractive and user-friendly platform for a wide demographic looking to shop efficiently during one of the biggest retail events of the year.
 
 The target audience for BlackFriday Market consists of:
-**Online Shoppers:** Individuals who prefer shopping online, especially during high-demand sale events like Black Friday.
-**Bargain Hunters:** People looking to take advantage of special offers, discounts, and promotions typically available during Black Friday.
- **Tech-Savvy Consumers:** Those who are comfortable with navigating e-commerce platforms and expect a smooth, secure online shopping experience.
+* **Online Shoppers:** Individuals who prefer shopping online, especially during high-demand sale events like Black Friday.
+* **Bargain Hunters:** People looking to take advantage of special offers, discounts, and promotions typically available during Black Friday.
+* * **Tech-Savvy Consumers:** Those who are comfortable with navigating e-commerce platforms and expect a smooth, secure online shopping experience.
 **First-Time Online Shoppers:** Users who are new to online shopping and want a simple, easy-to-navigate platform for their first experience.
 
 
