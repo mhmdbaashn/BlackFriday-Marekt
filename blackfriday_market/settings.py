@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-mhmdbaashn-blackfridaym-hduj4lpah5c.ws.codeinstitute-ide.net',
-                 '.herokuapp.com'
+                 'balckfriday-market-7b8127d54f29.herokuapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
