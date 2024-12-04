@@ -10,10 +10,12 @@
     {% for product in products %}
         <div class="col-md-4 mb-3">
             <div class="card">
+                {% if product.featured_image %}
+                <img src="{{ product.featured_image.url }}" alt="{{ product.name }}" class="card-img-top" style="height: 300px; object-fit: cover;">
+                {% else %}
+                <img src="https://res.cloudinary.com/your_cloud_name/image/upload/v1234567890/placeholder.jpg" alt="Placeholder" class="card-img-top" style="height: 300px; object-fit: cover;">
+                {% endif %}
                 <div class="card-body">
-                    {% if product.image %}
-                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top" style="max-height: 200px; object-fit: cover;">
-                     {% endif %}
                     <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">{{ product.description|truncatechars:100 }}</p>
                     <p class="text-muted">Price: <s>€{{ product.price }}</s></p>
