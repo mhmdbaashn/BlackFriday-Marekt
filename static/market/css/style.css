@@ -10,14 +10,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
-    background-color: #ffc107;
+    background-color: grey;
 
 }
 
 
 /* Optional custom footer styles */
 footer {
-    background-color: #3785f2; /* Dark background */
+    background-color: #000409; /* Dark background */
 }
 
 footer a {

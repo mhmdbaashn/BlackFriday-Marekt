@@ -10,22 +10,20 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
-    /* background-color: #7bdae4; */
+    background-color: grey;
 
 }
 
 
 /* Optional custom footer styles */
-.footer {
-    background-color: #343a40; /* لون الخلفية */
-    color: #fff; /* لون النص */
-    font-size: 14px; /* حجم النص */
+footer {
+    background-color: #000409; /* Dark background */
 }
-.social-icons a {
-    font-size: 20px; /* حجم الأيقونات */
-    text-decoration: none; /* إزالة الخط السفلي */
-    transition: color 0.3s ease; /* تأثير عند مرور الفأرة */
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
 }
-.social-icons a:hover {
-    color: #17a2b8; /* لون مختلف عند التمرير */
-}
+
+/* footer a:hover {
+} */
