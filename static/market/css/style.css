@@ -25,5 +25,11 @@ footer a {
     color: #ffffff;
 }
 
-/* footer a:hover {
-} */
+.social-icons a.icon-hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a.icon-hover:hover {
+    color: #007bff; 
+    transform: scale(1.2); 
+}

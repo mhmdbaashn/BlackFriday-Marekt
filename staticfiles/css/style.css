@@ -1,8 +1,23 @@
 
 
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    background-color: grey;
+
+}
+
+
 /* Optional custom footer styles */
 footer {
-    background-color: #343a40; /* Dark background */
+    background-color: #000409; /* Dark background */
 }
 
 footer a {
@@ -10,6 +25,11 @@ footer a {
     color: #ffffff;
 }
 
-footer a:hover {
-    color: #ffc107;
+.social-icons a.icon-hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a.icon-hover:hover {
+    color: #007bff; 
+    transform: scale(1.2); 
 }
