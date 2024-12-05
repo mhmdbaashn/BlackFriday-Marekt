@@ -1,0 +1,29 @@
+
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    background-color: #ffc107;
+
+}
+
+
+/* Optional custom footer styles */
+footer {
+    background-color: #3785f2; /* Dark background */
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* footer a:hover {
+} */
