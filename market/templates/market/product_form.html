@@ -2,11 +2,24 @@
 
 {% block content %}
 <div class="container mt-5">
-    <h3 class="text-center">Add New Product</h3>
+    <h1 class="text-center">
+        {% if product %}
+            Edit Product: {{ product.name }}
+        {% else %}
+            Add New Product
+        {% endif %}
+    </h1>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Add Product</button>
+        <button type="submit" class="btn btn-primary">
+            {% if product %}
+                Update Product
+            {% else %}
+                Add Product
+            {% endif %}
+        </button>
     </form>
+    
 </div>
 {% endblock %}

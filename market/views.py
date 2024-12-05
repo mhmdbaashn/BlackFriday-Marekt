@@ -35,11 +35,14 @@ def product_update(request, pk):
             return redirect('product_list')
     else:
         form = ProductForm(instance=product)
-    return render(request, 'market/product_form.html', {'form': form})
+    return render(request, 'market/product_form.html',  {'form': form, 'product': product})
 
+@login_required
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)
+    if product.seller != request.user:
+        return redirect('product_list')  # منع الحذف إذا لم يكن المستخدم المالك
     if request.method == 'POST':
         product.delete()
         return redirect('product_list')
-    return render(request, 'market/product_confirm_delete.html', {'product': product})
+    return render(request, 'market/product_delete.html', {'product': product})
