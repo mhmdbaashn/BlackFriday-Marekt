@@ -3,10 +3,11 @@ from django.contrib.auth.decorators import login_required
 from .models import Product
 from .forms import ProductForm
 
-
+@login_required
 def home(request):
     return render(request, 'market/home_page.html')
 
+@login_required
 def product_list(request):
     products = Product.objects.all()
     return render(request, 'market/product_list.html', {'products': products})
@@ -41,7 +42,7 @@ def product_update(request, pk):
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)
     if product.seller != request.user:
-        return redirect('product_list')  # منع الحذف إذا لم يكن المستخدم المالك
+        return redirect('product_list') 
     if request.method == 'POST':
         product.delete()
         return redirect('product_list')
