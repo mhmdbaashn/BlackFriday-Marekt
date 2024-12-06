@@ -4,11 +4,12 @@
 <div class="container mt-5">
     <div class="row mt-5">
         <div class="col-md-6">
-            {% if product.featured_image %}
-                <img src="{{ product.featured_image.url }}" class="img-fluid rounded" alt="{{ product.name }}">
-            {% else %}
-                <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="No Image">
-            {% endif %}
+
+        {% if product.featured_image and product.featured_image.url %}
+            <img src="{{ product.featured_image.url }}" class="img-fluid rounded" alt="{{ product.name }}">
+        {% else %}
+            <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="No Image">
+        {% endif %}
         </div>
         <div class="col-md-6 mt-5">
             <h3 class="text-center text-success mb-5">{{ product.name }}</h3>
