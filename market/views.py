@@ -3,7 +3,6 @@ from django.contrib.auth.decorators import login_required
 from .models import Product
 from .forms import ProductForm
 
-@login_required
 def home(request):
     return render(request, 'market/home_page.html')
 
