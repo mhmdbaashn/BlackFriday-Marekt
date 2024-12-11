@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Product
 from .forms import ProductForm
+from django.contrib import messages
+
 
 def home(request):
     return render(request, 'market/home_page.html')
@@ -20,6 +22,8 @@ def product_create(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
+            product = form.save(commit=False)
+            product.seller = request.user  
             form.save()
             return redirect('product_list')
     else:
@@ -28,6 +32,9 @@ def product_create(request):
 
 def product_update(request, pk):
     product = get_object_or_404(Product, pk=pk)
+    if product.seller != request.user:
+        messages.error(request, "You are not allowed to modify this product.")
+        return redirect('product_list') 
     if request.method == 'POST':
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
@@ -41,6 +48,7 @@ def product_update(request, pk):
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)
     if product.seller != request.user:
+        messages.error(request, "You are not allowed to delete this product.")
         return redirect('product_list') 
     if request.method == 'POST':
         product.delete()
