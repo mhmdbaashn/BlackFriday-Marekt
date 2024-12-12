@@ -120,6 +120,32 @@ The target audience for BlackFriday Market consists of:
 
 ## User Stories Overview
 ***
+1. Title: Registration (Sign Up).
+   * AC1 Given an email a user can register an account.
+   * AC2 Then the user can log in.
+   * AC3 When the user is logged in they can add his products.
+
+2. Title: Product Management .
+   * AC1 Given a logged in user, they can create a product.
+   * AC2 Given a logged in user, they can read a product .
+   * AC3 Given a logged in user, they can update a product.
+   * AC4 Given a logged in user, they can delete a product.
+
+
+3. Title: Navigation
+   * AC1 When clicking the index link, the user is always taken to the landing page.
+   * AC2  When clicking the Registration link, the user is always taken to the registration page.
+   * AC3 When clicking the Log In link, the user is taken to the login page.
+   * AC4 When clicking the Log Out link, the user is taken to the log out page.
+
+4. Title: Footer
+
+5. Title: Hero Section
+   *  AC1 A hero Image with welcoming message .
+   *  AC2 The call-to-action button redirects to the registration page.
+
+
+
 
 ## Features Implemented
 ***
@@ -134,11 +160,29 @@ The target audience for BlackFriday Market consists of:
 
 <img src="https://github.com/user-attachments/assets/a3d0e6d4-f477-47a6-bc63-eb7cf529b3e9" width="700" height="550">
 
+
+### All Products :
+***
+*  It shows all products in our site. 
+
+
 <img src="https://github.com/user-attachments/assets/896912c6-1bc7-4f1e-91d2-1986764f0f3a" width="700" height="550">
 
-### Product detail :
+
+### Add Product : 
 ***
+*  It asks to complete fields like : Title, Description, Price , Price descount and Seller
+
+
 <img src="https://github.com/user-attachments/assets/4af48bc0-5aa2-4986-8d31-1cfea4f6692e" width="700" height="550">
+
+### Detail Product
+***
+*  Users can edit and delete their own products.
+*  Users must be logged in to edit own products.
+*  Users must be logged in to delete their own products.
+*  Users cannot delete or edit product by other users.
+
 
 <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="700" height="550">
 
