@@ -26,6 +26,6 @@ class Product(models.Model):
     available = models.BooleanField(default=True)
     seller = models.ForeignKey(User, on_delete=models.CASCADE)
     featured_image = CloudinaryField('image', blank=True, null=True)
-
+    
     def __str__(self):
         return self.name

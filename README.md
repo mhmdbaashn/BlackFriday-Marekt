@@ -101,3 +101,9 @@ Database Planning
 ## Kanban Board Overview
 ---
 
+## Database Planning
+------
+
+### I used dbdiagram to create my database entity relationship diagrams. Below you can see how each model relates to each other.
+
+<img src="https://github.com/user-attachments/assets/cc04888b-0132-4234-bc4d-7d058d2548ab" width="900" height="700">
