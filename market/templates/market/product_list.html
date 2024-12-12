@@ -7,9 +7,9 @@
 <h3 class="mb-4">Available Products</h3>
 
 
-<div class="row">
+<div class="row mb-5">
     {% for product in products %}
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 mb-5">
             <div class="card">
                 {% if product.featured_image %}
                 <img src="{{ product.featured_image.url }}" alt="{{ product.name }}" class="card-img-top"  style="max-height:300px; object-fit: cover; width: 100%;">
@@ -26,6 +26,9 @@
                 </div>
             </div>
         </div>
+
+       
     {% endfor %}
 </div>
+
 {% endblock %}
