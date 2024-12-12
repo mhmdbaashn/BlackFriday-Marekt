@@ -77,7 +77,17 @@ The target audience for BlackFriday Market consists of:
    * Google Slack and Stack Overflow ChatGPT utilized for general research or solving a bug, information gathering, and various online tools. 
 ---
 
-Database Planning
+## Database Planning
+------
+
+### I used dbdiagram to create my database entity relationship diagrams. Below you can see how each model relates to each other.
+
+<div align="center" >
+
+<img src="https://github.com/user-attachments/assets/cc04888b-0132-4234-bc4d-7d058d2548ab" width="900" height="400">
+</div>
+
+
 
 
 
@@ -101,9 +111,115 @@ Database Planning
 ## Kanban Board Overview
 ---
 
-## Database Planning
-------
 
-### I used dbdiagram to create my database entity relationship diagrams. Below you can see how each model relates to each other.
 
-<img src="https://github.com/user-attachments/assets/cc04888b-0132-4234-bc4d-7d058d2548ab" width="900" height="700">
+
+
+## User Stories Overview
+***
+
+## Features Implemented
+***
+
+### Home Page:
+***
+*   Products are displayed as cards.
+*   Users can click on card button  to read the detail product.
+*   Users can edit and delete their own products.
+*   Users must be logged in to  edit own products.
+*   Users must be logged in to delete their own products.
+*   Users cannot delete or edit product by other users.
+
+<img src="https://github.com/user-attachments/assets/a3d0e6d4-f477-47a6-bc63-eb7cf529b3e9" width="700" height="550">
+
+
+### Footer/Nav Bar:
+***
+*   Navigation links facilitate easy navigation throughout the website.
+*   Social media links direct users to virtual BlackFriday Market social media pages.
+
+<img src="https://github.com/user-attachments/assets/47e1b1a8-f402-4d0c-b8da-2cdb62dae962" width="700" height="40">
+<br>
+<br>
+
+
+<img src="https://github.com/user-attachments/assets/20496b01-8822-4e0c-b012-ab09b148dc96" width="700" height="40">
+
+
+
+### Login Page:
+***
+*   Secure signup functionality allows users to register securely.
+*   Successful login redirects users to the home page.
+
+<img src="https://github.com/user-attachments/assets/589a46c5-7fa6-4a45-9ccf-341446cb97b3" width="700" height="400">
+
+
+
+### Registration Page:
+***
+
+*    Secure login functionality allows users to log in securely.
+*    Successful registration redirects users to the home page.
+
+<img src="https://github.com/user-attachments/assets/c5260b25-760a-4d70-8e9c-724fdc815943" width="700" height="400">
+
+
+### Logout Page:
+***
+
+*   Logout functionality allows users to sign out securely.
+*   After successful logout, users are redirected to the home page.
+
+<img src="https://github.com/user-attachments/assets/46607067-70c1-4a2d-9920-484cc5bc0b5d" width="700" height="400">
+
+## Additional Security Features:
+***
+
+*  Prevention of brute force actions via URL.
+*  Users are redirected to the sign-in page with an unauthorized action notification if they attempt unauthorized actions.
+*  Prevention of users deleting other users' product.
+*  Prevention of users editing other users' product.
+
+
+
+
+
+
+## Deployment
+---
+
+Deployment Steps:
+Creating the Heroku App
+
+    Begin by signing up or logging in to Heroku.
+    In the Heroku Dashboard, click on 'New' and then select 'Create New App'.
+    Choose a unique name for your project, like "Travelling Scribbles".
+    Select the EU region.
+    Click on "Create App".
+    In the "Deploy" tab, choose GitHub as the deployment method.
+    Connect your GitHub account and find/connect your GitHub repository.
+
+Setting Up Environment Variables
+
+    Create env.py in the top level of the Django app.
+    Import os in env.py.
+    Set up necessary environment variables in env.py, including the secret key and database URL.
+    Update settings.py to use environment variables for secret key and database.
+    Configure environment variables in the Heroku "Settings" tab under "Config Vars".
+    Migrate the models to the new database connection in the terminal.
+    Configure static files and templates directories in settings.py.
+    Add Heroku to the ALLOWED_HOSTS list.
+
+Creating Procfile and Pushing Changes
+
+    Create a Procfile in the top level directory.
+    Add the command to run the project in the Procfile.
+    Add, commit, and push the changes to GitHub.
+
+Heroku Deployment
+
+    In Heroku, navigate to the Deployment tab and deploy the branch manually.
+    Monitor the build logs for any errors.
+    Upon successful deployment, Heroku will display a link to the live site.
+    Make sure to resolve any deployment errors by adjusting the code as necessary.
