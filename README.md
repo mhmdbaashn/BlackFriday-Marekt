@@ -125,11 +125,9 @@ The target audience for BlackFriday Market consists of:
    * AC2 Then the user can log in.
    * AC3 When the user is logged in they can add his products.
 
-2. Title: Product Management .
-   * AC1 Given a logged in user, they can create a product.
-   * AC2 Given a logged in user, they can read a product .
-   * AC3 Given a logged in user, they can update a product.
-   * AC4 Given a logged in user, they can delete a product.
+2. Title: Hero Section
+   *  AC1 A hero Image with welcoming message .
+   *  AC2 The call-to-action button redirects to the registration page.
 
 
 3. Title: Navigation
@@ -140,9 +138,17 @@ The target audience for BlackFriday Market consists of:
 
 4. Title: Footer
 
-5. Title: Hero Section
-   *  AC1 A hero Image with welcoming message .
-   *  AC2 The call-to-action button redirects to the registration page.
+5. Title: Product Management .
+   * AC1 Given a logged in user, they can create a product.
+   * AC2 Given a logged in user, they can read a product .
+   * AC3 Given a logged in user, they can update a product.
+   * AC4 Given a logged in user, they can delete a product.
+
+6. Title: Log in 
+
+   * AC1 login form with fields for username and password is available.
+   * AC2 The form displays error messages for incorrect credentials.
+   * AC3 Successful login redirects to the user's dashboard with a welcome message.
 
 
 
@@ -151,12 +157,9 @@ The target audience for BlackFriday Market consists of:
 ***
 ### Home Page:
 ***
-*   Products are displayed as cards.
-*   Users can click on card button  to read the detail product.
-*   Users can edit and delete their own products.
-*   Users must be logged in to  edit own products.
-*   Users must be logged in to delete their own products.
-*   Users cannot delete or edit product by other users.
+*   Users can  displayed as cards.
+*   Users can sign up throug hero section or from navbar.
+
 
 <img src="https://github.com/user-attachments/assets/a3d0e6d4-f477-47a6-bc63-eb7cf529b3e9" width="700" height="550">
 
@@ -236,9 +239,100 @@ The target audience for BlackFriday Market consists of:
 *  Prevention of users editing other users' product.
 
 
+### Technology used
+***
+
+   * Django: Web framework for building the site.
+   * Heroku: Platform for hosting and deployment.
+   * HTML & CSS: For page structure and custom styling.
+   * Bootstrap 5: Ensures responsive design.
+   * Python: Backend logic and processing.
+   * JavaScript: Additional functionality, like checking passwords to match during log in.
+   * PostgreSQL: Relational database system.
+   * Cloudinary: Image hosting service.
+   * Font Awesome: Icons for UI enhancement.
+   * Google Fonts: Custom typography.
+   * GitHub: Source code repository and agile project methodology.
+   * Git: Version control for code management.
+   * Goog
+
+
+## Testing and validation 
+
+
+## CSS
+
+* I used the W3 CSS Validator to check my CSS script by Direct Input. I found no errors! There are 5 warnings which are just flagging vendor extensions.
+
+
+* I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
+
+
+##### [ Back to Top ](#table-of-contents)
+
+## Testing and Validation
+### Manual Testing Results
+
+
+### Home Page 
+
+| Test | Result |
+| --- | --- |
+| `Products displayed as cards` | Pass |
+| `Redirect after successful login` | Pass |
+| `User must be logged in to add/edit/delete product` | Pass |
+| `Ability to click on a product card` | Pass |
+| `Edit and delete product functionality` | Pass |
+| `Prevention of editing other users' product` | Pass |
+| `Prevention of deleting other users' product` | Pass |
+
+
+### Footer/Navbar 
+
+| Test | Result |
+| --- | --- |
+| `Navigation links functionality` | Pass |
+| `Social media links functionality` | Pass |  
+
+
+### Login Page 
+
+| Test | Result |
+| --- | --- |
+| `Secure login functionality` | Pass |
+| `Redirect after successful login` | Pass |
 
 
 
+### Registration Page  
+
+| Test | Result |
+| --- | --- |
+| `Secure signup functionality` | Pass |
+| `Redirect after successful registration` | Pass |
+
+
+### Logout Page 
+
+
+| Test | Result |
+| --- | --- |
+| `Logout functionality` | Pass |
+| `Redirect after successful logout` | Pass |
+
+
+
+
+###  Security
+
+| Test | Result |
+| --- | --- |
+| `Prevention of brute force actions via URL` | Pass |
+| `Redirect to sign-in page after attempted unauthorized action` | Pass |
+
+
+
+##### [ Back to Top ](#table-of-contents)
 
 ## Deployment
 ---
