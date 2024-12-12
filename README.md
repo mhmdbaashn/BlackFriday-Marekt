@@ -76,3 +76,20 @@ The target audience for BlackFriday Market consists of:
    * GitHub: Source code repository and agile project methodology.
    * Git: Version control for code management.
    * Google Slack and Stack Overflow ChatGPT utilized for general research or solving a bug, information gathering, and various online tools. 
+---
+
+
+
+### Wireframes
+---
+
+
+
+
+
+<img src="https://github.com/user-attachments/assets/f87bad8d-4566-4628-96c5-73241cbfa410" width="800" height="800">
+
+<br>
+<br>
+
+<img src="https://github.com/user-attachments/assets/3caffa38-9c47-4955-aaec-74392e246f1d" width="800" height="800">
