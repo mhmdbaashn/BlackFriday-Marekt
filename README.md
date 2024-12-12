@@ -20,7 +20,7 @@
 </div>
 
 
-<br> <br> 
+<br> 
 
 <div align="center" width="50">
 <h1> Welcome to  BlackFriday Market </h1>
@@ -85,6 +85,8 @@ The target audience for BlackFriday Market consists of:
 
 
 
+<div align="center" >
+
 
 
 <img src="https://github.com/user-attachments/assets/f87bad8d-4566-4628-96c5-73241cbfa410" width="700" height="700">
@@ -93,3 +95,4 @@ The target audience for BlackFriday Market consists of:
 <br>
 
 <img src="https://github.com/user-attachments/assets/3caffa38-9c47-4955-aaec-74392e246f1d" width="700" height="700">
+</div>
