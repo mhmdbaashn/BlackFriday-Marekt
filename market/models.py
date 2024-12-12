@@ -6,6 +6,8 @@ from cloudinary.models import CloudinaryField
 
 
 class Category(models.Model):
+    # The 'Category' model represents a product category in the database
+
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200)
 
@@ -13,6 +15,8 @@ class Category(models.Model):
         return self.name
 
 class Product(models.Model):
+    # The 'Product' model represents a product in the store
+
     category = models.ForeignKey(Category,on_delete=models.PROTECT )
     name = models.CharField(max_length=100)
     description = models.TextField()
