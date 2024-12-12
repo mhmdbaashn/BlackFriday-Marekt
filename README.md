@@ -1,24 +1,15 @@
 
-<!--
 
- https://github.com/Swetlanda/happy-belly
+<div align="center" >
 
+<img src="https://github.com/user-attachments/assets/a622710e-da8e-4fe8-ad68-c7259cd6c763" width="800" height="500">
 
-<img src="https://github.com/user-attachments/assets/f554ddf8-2f7c-4628-8124-22fb168134de" width="300" height="300">
+<br>
 
-<div align="center" width="50">
-
+# [Live Project .. Click here](https://balckfriday-market-7b8127d54f29.herokuapp.com/)
 </div>
 
-
- -->
-<div align="center" width="50">
-
-<img src="https://github.com/user-attachments/assets/a622710e-da8e-4fe8-ad68-c7259cd6c763
-" width="800" height="500">
-
-
-</div>
+<br>
 
 
 
@@ -29,14 +20,13 @@
 </div>
 
 
-<br> 
-
 <div align="center" width="50">
 <h1> Welcome to  BlackFriday Market </h1>
 
 </div>
 
 ### BlackFriday Market  is an e-commerce platform designed to provide a seamless shopping experience for users during the Black Friday shopping season. The website allows users to browse, select, and purchase a wide range of products, benefiting from exclusive Black Friday discounts and offers. The platform includes key features like user sign-up, login, Add product, Update and delete your product.
+
 
 
 # User Experience Design
