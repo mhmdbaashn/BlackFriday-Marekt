@@ -44,6 +44,8 @@ def product_update(request, pk):
         form = ProductForm(instance=product)
     return render(request, 'market/product_form.html',  {'form': form, 'product': product})
 
+
+
 @login_required
 def product_delete(request, pk):
     product = get_object_or_404(Product, pk=pk)

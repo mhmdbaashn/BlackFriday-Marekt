@@ -58,7 +58,7 @@ The target audience for BlackFriday Market consists of:
    * Resources
    * Credits and acknowledgements
 
-<!-- 
+
 
 
 ### Technology used
@@ -75,4 +75,4 @@ The target audience for BlackFriday Market consists of:
    * Google Fonts: Custom typography.
    * GitHub: Source code repository and agile project methodology.
    * Git: Version control for code management.
-   * ChatGPT: create logo, images, content for the website and help during coding. -->
+   * Google Slack and Stack Overflow ChatGPT utilized for general research or solving a bug, information gathering, and various online tools. 
