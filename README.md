@@ -278,29 +278,29 @@ The target audience for BlackFriday Market consists of:
 
 | Test | Result |
 | --- | --- |
-| `Products displayed as cards` | Pass |
-| `Redirect after successful login` | Pass |
-| `User must be logged in to add/edit/delete product` | Pass |
-| `Ability to click on a product card` | Pass |
-| `Edit and delete product functionality` | Pass |
-| `Prevention of editing other users' product` | Pass |
-| `Prevention of deleting other users' product` | Pass |
+| Products displayed as cards | Pass |
+| Redirect after successful login | Pass |
+| User must be logged in to add/edit/delete product | Pass |
+| Ability to click on a product card | Pass |
+| Edit and delete product functionality | Pass |
+| Prevention of editing other users' product | Pass |
+| Prevention of deleting other users' product | Pass |
 
 
 ### Footer/Navbar 
 
 | Test | Result |
 | --- | --- |
-| `Navigation links functionality` | Pass |
-| `Social media links functionality` | Pass |  
+| Navigation links functionality | Pass |
+| Social media links functionality | Pass |  
 
 
 ### Login Page 
 
 | Test | Result |
 | --- | --- |
-| `Secure login functionality` | Pass |
-| `Redirect after successful login` | Pass |
+| Secure login functionality | Pass |
+| Redirect after successful login | Pass |
 
 
 
@@ -308,8 +308,8 @@ The target audience for BlackFriday Market consists of:
 
 | Test | Result |
 | --- | --- |
-| `Secure signup functionality` | Pass |
-| `Redirect after successful registration` | Pass |
+| Secure signup functionality | Pass |
+| Redirect after successful registration | Pass |
 
 
 ### Logout Page 
@@ -317,8 +317,8 @@ The target audience for BlackFriday Market consists of:
 
 | Test | Result |
 | --- | --- |
-| `Logout functionality` | Pass |
-| `Redirect after successful logout` | Pass |
+| Logout functionality` | Pass |
+| Redirect after successful logout | Pass |
 
 
 
@@ -327,8 +327,8 @@ The target audience for BlackFriday Market consists of:
 
 | Test | Result |
 | --- | --- |
-| `Prevention of brute force actions via URL` | Pass |
-| `Redirect to sign-in page after attempted unauthorized action` | Pass |
+| Prevention of brute force actions via URL | Pass |
+| Redirect to sign-in page after attempted unauthorized action | Pass |
 
 
 
