@@ -6,7 +6,7 @@
 
 <br>
 
-# [Live Project .. Click here](https://balckfriday-market-7b8127d54f29.herokuapp.com/)
+# [Live Project .. BlackFriday Market](https://balckfriday-market-7b8127d54f29.herokuapp.com/)
 </div>
 
 <br>
@@ -33,6 +33,7 @@
 ***
 
  ## Table of Contents
+ ***
   
    * Purpose and target audience
    * UX
@@ -61,6 +62,7 @@ The target audience for BlackFriday Market consists of:
 
 
 ### Technology used
+***
 
    * Django: Web framework for building the site.
    * Heroku: Platform for hosting and deployment.
@@ -120,7 +122,6 @@ The target audience for BlackFriday Market consists of:
 
 ## Features Implemented
 ***
-
 ### Home Page:
 ***
 *   Products are displayed as cards.
@@ -131,6 +132,10 @@ The target audience for BlackFriday Market consists of:
 *   Users cannot delete or edit product by other users.
 
 <img src="https://github.com/user-attachments/assets/a3d0e6d4-f477-47a6-bc63-eb7cf529b3e9" width="700" height="550">
+
+<img src="https://github.com/user-attachments/assets/896912c6-1bc7-4f1e-91d2-1986764f0f3a" width="700" height="550">
+
+<img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="700" height="550">
 
 
 ### Footer/Nav Bar:
@@ -189,37 +194,37 @@ The target audience for BlackFriday Market consists of:
 ## Deployment
 ---
 
-Deployment Steps:
-Creating the Heroku App
+#### Deployment Steps:
+#### Creating the Heroku App
 
-    Begin by signing up or logging in to Heroku.
-    In the Heroku Dashboard, click on 'New' and then select 'Create New App'.
-    Choose a unique name for your project, like "Travelling Scribbles".
-    Select the EU region.
-    Click on "Create App".
-    In the "Deploy" tab, choose GitHub as the deployment method.
-    Connect your GitHub account and find/connect your GitHub repository.
+* Begin by signing up or logging in to Heroku.
+* In the Heroku Dashboard, click on 'New' and then select 'Create New App'.
+* Choose a unique name for your project, like "Travelling Scribbles".
+* Select the EU region.
+* Click on "Create App".
+* In the "Deploy" tab, choose GitHub as the deployment method.
+* Connect your GitHub account and find/connect your GitHub repository.
 
-Setting Up Environment Variables
+#### Setting Up Environment Variables
 
-    Create env.py in the top level of the Django app.
-    Import os in env.py.
-    Set up necessary environment variables in env.py, including the secret key and database URL.
-    Update settings.py to use environment variables for secret key and database.
-    Configure environment variables in the Heroku "Settings" tab under "Config Vars".
-    Migrate the models to the new database connection in the terminal.
-    Configure static files and templates directories in settings.py.
-    Add Heroku to the ALLOWED_HOSTS list.
+*    Create env.py in the top level of the Django app.
+*    Import os in env.py.
+*    Set up necessary environment variables in env.py, including the secret key and database URL.
+*    Update settings.py to use environment variables for secret key and database.
+*    Configure environment variables in the Heroku "Settings" tab under "Config Vars".
+*    Migrate the models to the new database connection in the terminal.
+*    Configure static files and templates directories in settings.py.
+*    Add Heroku to the ALLOWED_HOSTS list.
 
-Creating Procfile and Pushing Changes
+#### Creating Procfile and Pushing Changes
 
-    Create a Procfile in the top level directory.
-    Add the command to run the project in the Procfile.
-    Add, commit, and push the changes to GitHub.
+*    Create a Procfile in the top level directory.
+*    Add the command to run the project in the Procfile.
+*    Add, commit, and push the changes to GitHub.
 
-Heroku Deployment
+#### Heroku Deployment
 
-    In Heroku, navigate to the Deployment tab and deploy the branch manually.
-    Monitor the build logs for any errors.
-    Upon successful deployment, Heroku will display a link to the live site.
-    Make sure to resolve any deployment errors by adjusting the code as necessary.
+*    In Heroku, navigate to the Deployment tab and deploy the branch manually.
+*    Monitor the build logs for any errors.
+*    Upon successful deployment, Heroku will display a link to the live site.
+*    Make sure to resolve any deployment errors by adjusting the code as necessary.
