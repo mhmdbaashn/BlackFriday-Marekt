@@ -12,7 +12,23 @@ body {
 }
 
 
+/*************************************************************************************** Navbar Start  */
 
+.navbar-nav .nav-item .nav-link {
+    color: #f7f5f5; 
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; 
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+}
+
+/*************************************************************************************** Navbar End  */
+
+
+/********************************************************************************** Home Page Start  */
 .stats {
     padding: 50px 0;
 }
@@ -29,20 +45,38 @@ body {
 .stats .stat p {
     font-size: 1rem;
 }
+/********************************************************************************** Home Page End  */
 
 
 
-/* Footer Start */
-footer {
-    background-color: #000409; 
+/************************************************************************************ Footer Start */
+.social-icons a {
+    color: #666; 
+    text-decoration: none; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+    
+    .social-icons a:hover {
+        color: #f1e20a !important; 
+        text-decoration: underline !important; 
+        transform: scale(1.1);
 }
 
-footer a {
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #666;
     text-decoration: none;
-    color: #ffffff;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.social-icons a.icon-hover {
-    transition: transform 0.3s ease, color 0.3s ease;
+.footer a:hover {
+    color: #f1f44a;
+    text-decoration: underline;
 }
-/* Footer End */
+
+/******************************************************************************* Footer End */

@@ -3,16 +3,16 @@
 
 {% block content %}
 <div class="background-image text-center content mt-5">
-    <!-- صف يحتوي على الصورة والعنوان -->
-    <div class="row align-items-center mb-5">
-        <!-- العمود الأول: النص -->
-        <div class="col-md-6 text-center text-dark">
+<!-- Row containing the image and title -->
+<div class="row align-items-center mb-5">
+    <!-- First column: text -->
+    <div class="col-md-6 text-center text-dark">
             <h1>Welcome to Our Marketplace</h1>
             <p class="lead">Sign up to add your product now!</p>
-            <a href="{% url 'account_signup' %}" class="btn btn-outline-danger text-primary btn-md px-5 mb-5">Sign Up</a>
+            <a href="{% url 'account_signup' %}" class="btn btn-outline-primary text-danger btn-md px-5 mb-5">Sign Up</a>
         </div>
-        <!-- العمود الثاني: البنر -->
-        <div class="col-md-6">
+    <!-- Second column: banner -->
+    <div class="col-md-6">
             <div class="hero-banner" 
                  style="background-image: url('https://res.cloudinary.com/dwuzopoph/image/upload/v1733936420/55_udgtay.png');
                         height: 300px; 
@@ -23,8 +23,8 @@
         </div>
     </div>
 
-    <!-- قسم الإحصائيات -->
-    <section id="stats" class="stats bg-light mt-5">
+<!-- Statistics Section -->
+<section id="stats" class="stats bg-light mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 stat text-center">
