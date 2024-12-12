@@ -82,12 +82,15 @@ body {
 /******************************************************************************* Footer End */
 
 
+/******************************************************************************* Alert Start */
 .alert-error {
-    font-size: 20px; /* تغيير حجم الخط */
-    color: white; /* لون النص */
-    background-color: red; /* لون الخلفية */
-    text-align: center; /* محاذاة النص في المنتصف */
-    padding: 15px; /* إضافة حواف للنص */
-    border-radius: 5px; /* جعل الحواف مستديرة */
-    margin: 20px 0; /* المسافة بين الرسائل */
+    font-size: 20px; 
+    color: white;
+    background-color: red; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin: 20px 0; 
 }
+
+/******************************************************************************* Alert End */

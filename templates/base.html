@@ -9,8 +9,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best deals at BlackFriday Market. An online store offering massive discounts on a wide range of premium products during Black Friday. Shop now for the best prices and exclusive offers!">
+    <meta name="keywords" content="BlackFriday, Black Friday deals, huge discounts, online shopping, BlackFriday Market, Black Friday 2024, exclusive offers, discount shopping, tech discounts, best prices">
+    <!-- Title -->
     <title>{% block title %}Black Friday Market{% endblock %}</title>
 
     <!-- Favicon -->
@@ -19,24 +23,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- cloudflare  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Style CSS -->
+    <!-- Custom CSS file -->
     <link rel="stylesheet" href="{% static 'market/css/style.css' %}">
 
 </head>
 <body>
     <header>
-        <!-- Navbar -->
+        <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'home' %}">
                     <img src="data:image/jpeg;base64,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CIiAqE21KqrdTFnY5h2cC0+hFkGlu5rYV7V7L7Qc2bLnyu6eba2ftfx2W11eFU89nTQRSm2hexj9PUgqA28i601ZYZYhTZr9XMS4s7Blr5raa6ea6Fp4gxjWDZoAHoBZBbpKOOEZYomRjsxrWD6AK+qqiDB8ZcSxYZRvqptbaMYN3vPwtH6nw1XM+IYtXcQYhFG9xc6R+WOMfBE07kDsBcl2+i6H5kcFjF6VsPV6b43Z43WzC9rEOHiLfReLlvy3hwgOkL+rUvFnSWsGt+6weHmdyg2vAMKZR0sNNELNiaGjzsNT8yveQiIONeLqYxYhVxuFiJpNPIvJH5FeHDqJ88rIo7ZnG1ybAdy4+AA1K6E5n8qPtGU1lG9rJyPfY/RshGxzD4XW9b6bKLouUuNdTIKTKDoX9aDLl8SbPvbytfyQZ7l/TtruIIOhd1NQwhjHd2xggOP45Hvd810OtO5Z8DMwimLS4PnksZXgWGmzG/wj891uKCM+IeVBk6raGs9nhmcXSQPjbPGHHd0YdrGfML64K5PUlBKyed5qJmEFuYBrGuGzg3xPqSpKRAREQEREBERAREQEREFUREBERAREQEREBUVVRAREQEREBERBVUREBERAREQEREBERAREQEREFUREBERAREQEREBUVVRAREQEREBERAREQEREBERAREQEREBERAREQVREQEREBERAREQFRVVEBERAREQEREBERAREQEREBERAREQEREBERBVERAREQEREBERAVERAREQEREBERAREQEREBERAREQEREBERAREQf/Z" 
-                         alt="Black Friday Logo" 
-                         width="50" 
-                         height="50" 
-                         class="d-inline-block align-text-center">
+                    alt="Black Friday Logo" 
+                    width="50" 
+                    height="50" 
+                    class="d-inline-block align-text-center">
                     Black Friday Market
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,21 +76,26 @@
                 </div>
             </div>
         </nav>
-    
-
+        <!-- Navbar End -->
+        
+        
         
     </header>
-
+        <!-- Loop through all messages and display them in a styled alert box based on their tag type -->
     {% if messages %}
     <div class="container mt-3">
         {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}" role="alert">
-                {{ message }}
-            </div>
+
+        <!-- Display each message with a specific alert type (e.g., success, warning, error) -->
+        <div class="alert alert-{{ message.tags }}" role="alert">
+            {{ message }}
+        </div>
         {% endfor %}
     </div>
     {% endif %}
 
+
+    <!-- Main Content section-->
     <main class="container mt-4">
         
         {% if user.is_authenticated %}
@@ -95,22 +103,22 @@
         {% else %}
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
-
+        
         {% block content %}
-
+        
         <!-- Content Goes here -->
-
-
+        
+        
         {% endblock %}
-        <br><br><br><br><br><br>
-
+        
         
     </main>
-
-
-
+    
+    
+    
     <br><br>
-
+    
+    <!-- Footer Start -->
     <footer class="fixed-bottom bg-dark text-white text-center py-3">
         <div class="container text-center">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -127,6 +135,7 @@
         </div>
     </footer>
     
+    <!-- Footer End -->
    
 </body>
 </html>
