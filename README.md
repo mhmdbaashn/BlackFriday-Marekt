@@ -15,7 +15,7 @@
 
 <div align="center" width="50">
 
-<img src="https://github.com/user-attachments/assets/f554ddf8-2f7c-4628-8124-22fb168134de"  width="300" height="300">
+<img src="https://github.com/user-attachments/assets/79c197d5-8bbc-48cf-b5f1-17b408987f35"  width="300" height="300">
 
 </div>
 
@@ -27,7 +27,7 @@
 
 </div>
 
-#### BlackFriday Market is an e-commerce platform designed to provide a seamless shopping experience for users during the Black Friday shopping season. The website allows users to browse, select, and purchase a wide range of products, benefiting from exclusive Black Friday discounts and offers. The platform includes key features like user sign-up, login, product categorization, and a smooth checkout process. Users can create an account to save their details, track orders, and participate in various promotions.
+#### BlackFriday Market is an e-commerce platform designed to provide a seamless shopping experience for users during the Black Friday shopping season. The website allows users to browse, select, and purchase a wide range of products, benefiting from exclusive Black Friday discounts and offers. The platform includes key features like user sign-up, login, Add product, Update and delete your product.
 
 <br>
 
@@ -87,9 +87,9 @@ The target audience for BlackFriday Market consists of:
 
 
 
-<img src="https://github.com/user-attachments/assets/f87bad8d-4566-4628-96c5-73241cbfa410" width="800" height="800">
+<img src="https://github.com/user-attachments/assets/f87bad8d-4566-4628-96c5-73241cbfa410" width="700" height="700">
 
 <br>
 <br>
 
-<img src="https://github.com/user-attachments/assets/3caffa38-9c47-4955-aaec-74392e246f1d" width="800" height="800">
+<img src="https://github.com/user-attachments/assets/3caffa38-9c47-4955-aaec-74392e246f1d" width="700" height="700">
