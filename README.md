@@ -289,11 +289,11 @@ The target audience for BlackFriday Market consists of:
 
 | Page | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| forms.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="300">| Pass |
-| settings.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/9382b40f-b8e6-4832-8ae9-5769a70d1a2a" width="500" height="300">| Pass |
-| views.py |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/9ef1b5dc-e6a1-4a25-ac72-c370517c43ae" width="500" height="300">| 4 errors |
-| urls.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="300">| Pass |
-| models.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="300">| Pass |
+| forms.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/b9595aca-d08b-4802-b9bd-d7fbce2b0d87" width="500" height="300">| Pass |
+| settings.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/4369f69a-c141-45bc-9e11-7279d0920b04" width="500" height="300">| Pass |
+| views.py |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/3306e1dd-b184-4edd-a0ca-a23e8b24264b" width="500" height="300">|Pass |
+| urls.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/e05252d0-aa1b-41d5-bf7a-1881ca2f81b7" width="500" height="300">| Pass |
+| models.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/cdf29738-6962-4e7d-80b4-df4904dbd300" width="500" height="300">| Pass |
 
 
 
