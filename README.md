@@ -53,6 +53,9 @@
 
 
 
+# UX 
+***
+
 ## Purpose and Target Audience:
  The project aims to provide an attractive and user-friendly platform for a wide demographic looking to shop efficiently during one of the biggest retail events of the year.
 
@@ -126,6 +129,21 @@ The target audience for BlackFriday Market consists of:
 
 <img src="https://github.com/user-attachments/assets/77e85b0b-63fe-44d5-8fdb-6e461f5f6c69" width="700" height="500">
 
+
+## Design Choices:
+***
+### Color our scheme:
+
+#1f1f1f - Header and footer
+
+Dark Green - Buttons
+
+#809977 - Footer
+
+The colours were selected with the intention of complementing the hero image and the idea was to ensure the image was appreciated.
+
+### Typography:
+***
 
 
 
