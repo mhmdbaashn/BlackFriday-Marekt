@@ -49,9 +49,7 @@
 
  7. [Deployment](#deployment)
 
- 8. [Resources](#resources)  
-
- 9. [Credits and Acknowledgements](#credits-and-acknowledgements)
+ 8. [Credits and Acknowledgements](#credits-and-acknowledgements)
 
 
 
@@ -452,9 +450,6 @@ The target audience for BlackFriday Market consists of:
 
 #### [ Back to Top ](#table-of-contents)
 
-
-## Resources
-***
 
 ## Credits and Acknowledgements
 ***
