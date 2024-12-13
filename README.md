@@ -266,13 +266,13 @@ The target audience for BlackFriday Market consists of:
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
-| All Products  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/791f897e-b9b1-470d-b53c-8eedf7a8eb53" width="500" height="400">| Pass |
-| Add Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="400">| Pass |
-| Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
-| Sign Up  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
-| Sign In  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="400">| Pass |
-| Logout  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="400">| Pass |
+| Home  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
+| All Products  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/791f897e-b9b1-470d-b53c-8eedf7a8eb53" width="500" height="300">| Pass |
+| Add Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="300">| Pass |
+| Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
+| Sign Up  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
+| Sign In  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="300">| Pass |
+| Logout  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="300">| Pass |
 
 
 
