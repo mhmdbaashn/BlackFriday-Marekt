@@ -36,15 +36,16 @@ def product_create(request):
         form = ProductForm()
     return render(request, 'market/product_form.html', {'form': form})
 
+@login_required
 def product_update(request, pk):
     """
-    Allows the product seller to update their product. 
-    Redirects with an error if the user is not the seller. 
+    Allows the product seller or admin to update the product. 
+    Redirects with an error if the user is not the seller or an admin. 
     """    
     product = get_object_or_404(Product, pk=pk)
-    if product.seller != request.user:
+    if product.seller != request.user and not request.user.is_superuser:
         messages.error(request, "You are not allowed to modify this product.")
-        return redirect('product_list') 
+        return redirect('product_list')
     if request.method == 'POST':
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
@@ -59,12 +60,12 @@ def product_update(request, pk):
 @login_required
 def product_delete(request, pk):
     """
-    Deletes a product if the user is its seller; otherwise, shows an error and redirects.
+    Deletes a product if the user is its seller or an admin; otherwise, shows an error and redirects.
     """
     product = get_object_or_404(Product, pk=pk)
-    if product.seller != request.user:
+    if product.seller != request.user and not request.user.is_superuser:
         messages.error(request, "You are not allowed to delete this product.")
-        return redirect('product_list') 
+        return redirect('product_list')
     if request.method == 'POST':
         product.delete()
         return redirect('product_list')
