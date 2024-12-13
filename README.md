@@ -47,6 +47,27 @@
    * Resources
    * Credits and acknowledgements
 
+ 1. [UX](#ux)
+
+ 2. [Agile Development](#agile-development)
+
+ 3. [Features Implemented](#features-implemented)  
+
+ 4. [Features Left to Implement](#features-left-to-implement)  
+
+ 5. [Technology Used](#technology-used) 
+
+ 6. [Testing](#testing-and-validation)  
+
+ 7. [Bugs](#known-bugs)  
+
+ 8. [Deployment](#deployment)
+
+ 9. [Resources](#resources)  
+
+ 10. [Credits and Acknowledgements](#credits-and-acknowledgements)
+
+
 
 ## Purpose and Target Audience:
  The project aims to provide an attractive and user-friendly platform for a wide demographic looking to shop efficiently during one of the biggest retail events of the year.
@@ -285,7 +306,7 @@ The target audience for BlackFriday Market consists of:
 ## Python
 ***
 
-* I have used the recommended PEP8 CI Python Linter to validate all of my Python files.
+* I have used the recommended [PEP8 CI](https://pep8ci.herokuapp.com/)  Python Linter to validate all of my Python files.
 
 | Page | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -299,10 +320,7 @@ The target audience for BlackFriday Market consists of:
 
 
 
-
-
-
-##### [ Back to Top ](#table-of-contents)
+#### [ Back to Top ](#table-of-contents)
 
 ## Testing and Validation
 ### Manual Testing Results
@@ -366,7 +384,7 @@ The target audience for BlackFriday Market consists of:
 
 
 
-##### [ Back to Top ](#table-of-contents)
+#### [ Back to Top ](#table-of-contents)
 
 ## Deployment
 ---
@@ -405,6 +423,8 @@ The target audience for BlackFriday Market consists of:
 *    Monitor the build logs for any errors.
 *    Upon successful deployment, Heroku will display a link to the live site.
 *    Make sure to resolve any deployment errors by adjusting the code as necessary.
+
+#### [ Back to Top ](#table-of-contents)
 
 
 ## Resources
