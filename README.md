@@ -132,19 +132,15 @@ The target audience for BlackFriday Market consists of:
 
 ## Design Choices:
 ***
-### Color our scheme:
+### ***Color our scheme:***
 
-#1f1f1f - Header and footer
+#### Colors ( white and black  ) are chosen for a clean and simple website design that keeps the focus on the content.
 
-Dark Green - Buttons
-
-#809977 - Footer
-
-The colours were selected with the intention of complementing the hero image and the idea was to ensure the image was appreciated.
-
-### Typography:
+### ***Typography:***
 ***
+#### The following font was chosen for a clean and modern look that is both readable and minimal.
 
+#### Poppins', sans-serif;
 
 
 ## User Stories Overview
