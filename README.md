@@ -262,13 +262,14 @@ The target audience for BlackFriday Market consists of:
 
 ## CSS
 ***
-* I used the W3 CSS Validator to check my CSS script by Direct Input. I found no errors! There are 5 warnings which are just flagging vendor extensions.
+* I used the [ CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) Validator to check my CSS script by Direct Input. I found no errors! There are 1 warning.
 
+<img src="https://github.com/user-attachments/assets/2853269d-ebb7-44a3-8b11-521d8bac4d0d" width="500" height="300">
 
 ## HTML
 ***
 
-* I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
+* I used the  [W3C](https://validator.w3.org/) HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -281,6 +282,18 @@ The target audience for BlackFriday Market consists of:
 | Logout  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="300">| Pass |
 
 
+## Python
+***
+
+* I have used the recommended PEP8 CI Python Linter to validate all of my Python files.
+
+| Page | CI URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| forms.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="300">| Pass |
+| settings.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/9382b40f-b8e6-4832-8ae9-5769a70d1a2a" width="500" height="300">| Pass |
+| views.py |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/9ef1b5dc-e6a1-4a25-ac72-c370517c43ae" width="500" height="300">| 4 errors |
+| urls.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="300">| Pass |
+| models.py  |  [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="300">| Pass |
 
 
 
