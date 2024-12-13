@@ -264,6 +264,21 @@ The target audience for BlackFriday Market consists of:
 
 * I used the W3 CSS Validator to check my CSS script by Direct Input. I found no errors! There are 5 warnings which are just flagging vendor extensions.
 
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
+| All Products  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/791f897e-b9b1-470d-b53c-8eedf7a8eb53" width="500" height="400">| Pass |
+| Add Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="400">| Pass |
+| Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
+| Sign Up  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="400">| Pass |
+| Sign In  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="400">| Pass |
+| Logout  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="400">| Pass |
+
+
+
+
+
+
 
 * I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
 
@@ -289,7 +304,7 @@ The target audience for BlackFriday Market consists of:
 
 ### Footer/Navbar 
 
-| Test | Result |
+| Test | Result | 
 | --- | --- |
 | Navigation links functionality | Pass |
 | Social media links functionality | Pass |  
@@ -371,3 +386,14 @@ The target audience for BlackFriday Market consists of:
 *    Monitor the build logs for any errors.
 *    Upon successful deployment, Heroku will display a link to the live site.
 *    Make sure to resolve any deployment errors by adjusting the code as necessary.
+
+
+## Resources
+***
+
+## Credits and Acknowledgements
+***
+
+
+
+
