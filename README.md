@@ -47,13 +47,11 @@
 
  6. [Testing](#testing-and-validation)  
 
- 7. [Bugs](#known-bugs)  
+ 7. [Deployment](#deployment)
 
- 8. [Deployment](#deployment)
+ 8. [Resources](#resources)  
 
- 9. [Resources](#resources)  
-
- 10. [Credits and Acknowledgements](#credits-and-acknowledgements)
+ 9. [Credits and Acknowledgements](#credits-and-acknowledgements)
 
 
 
@@ -152,6 +150,7 @@ The target audience for BlackFriday Market consists of:
    * AC4 When clicking the Log Out link, the user is taken to the log out page.
 
 4. Title: Footer
+   * AC1 When clicking on social media icons the user is taken to new page . 
 
 5. Title: Product Management .
    * AC1 Given a logged in user, they can create a product.
@@ -253,6 +252,13 @@ The target audience for BlackFriday Market consists of:
 *  Prevention of users deleting other users' product.
 *  Prevention of users editing other users' product.
 
+## Future Features
+***
+1.  **Shopping Cart** :
+      *  Display Products in Cart, Total Price Calculation, Payment and Shipping Options and Guest or Registered Checkout.
+
+2. **Checkout Process** :
+      * Support Multiple Payment Methods, Payment Security and Payment Confirmation.
 
 ### Technology used
 ***
@@ -453,6 +459,14 @@ The target audience for BlackFriday Market consists of:
 ## Credits and Acknowledgements
 ***
 
+
+*  Code Institute LMS Content: For providing the educational materials that guided my learning process.
+*  Course Facilitators: Special thanks to  David Calikes for his support and guidance.
+*  Slack and Stack Overflow was used to solve any smaller bugs and further clarification on errors I was receiving in the terminal.
+*  A special thanks to all the other indivudals in our cohort for their continuous support throughout the course.
+*  The added Photo and products details were taken from the Shein Website.
+*  Boostrap Icons was used for icons and the fonts used were derived from Google Fonts.
+*  Wireframes, logo and flowcharts were created using balsamiq Wireframes.
 
 
 
