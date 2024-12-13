@@ -261,16 +261,22 @@ The target audience for BlackFriday Market consists of:
 
 
 ## CSS
-
+***
 * I used the W3 CSS Validator to check my CSS script by Direct Input. I found no errors! There are 5 warnings which are just flagging vendor extensions.
+
+
+## HTML
+***
+
+* I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
+| Home  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/504a42c1-a0bd-40c2-bb0c-b157ce1ae61e" width="500" height="300">| Pass |
 | All Products  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/791f897e-b9b1-470d-b53c-8eedf7a8eb53" width="500" height="300">| Pass |
 | Add Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/c30caac7-1455-4697-8e40-4d3a8d3e4de4" width="500" height="300">| Pass |
-| Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
-| Sign Up  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/102d1e1b-314d-4de9-8e67-7924565c42c6" width="500" height="300">| Pass |
+| Product  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/9382b40f-b8e6-4832-8ae9-5769a70d1a2a" width="500" height="300">| Pass |
+| Sign Up  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/9ef1b5dc-e6a1-4a25-ac72-c370517c43ae" width="500" height="300">| 4 errors |
 | Sign In  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/27195422-ae57-4414-9143-1802fd9f2a4a" width="500" height="300">| Pass |
 | Logout  |  [W3C](https://validator.w3.org/)| <img src="https://github.com/user-attachments/assets/b76ff352-eba5-4551-8497-d147d7c3087f" width="500" height="300">| Pass |
 
@@ -280,7 +286,7 @@ The target audience for BlackFriday Market consists of:
 
 
 
-* I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
+
 
 
 ##### [ Back to Top ](#table-of-contents)
