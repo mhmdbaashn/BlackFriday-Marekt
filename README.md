@@ -35,18 +35,6 @@
  ## Table of Contents
  ***
   
-   * Purpose and target audience
-   * UX
-   * Agile development
-   * Features implemented
-   * Features for future development
-   * Technology used
-   * Testing and validation
-   * Bugs and issues
-   * Deployment
-   * Resources
-   * Credits and acknowledgements
-
  1. [UX](#ux)
 
  2. [Agile Development](#agile-development)
