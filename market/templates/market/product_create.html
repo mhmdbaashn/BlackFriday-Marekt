@@ -1,12 +1,14 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6 col-12">
-            <h3 class="text-center">Add New Product</h3>
+        <!-- Main column -->
+            <<div class="col-md-6 col-sm-8 col-12">
+                <h3 class="text-center mb-4">Add New Product</h3>
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-primary btn-block">Add Product</button>
-            </form>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary w-100">Add Product</button>
+                </form>
         </div>
     </div>
 </div>

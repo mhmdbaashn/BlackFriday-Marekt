@@ -128,7 +128,7 @@ The target audience for BlackFriday Market consists of:
 * **In Progress:** This column tracks user stories currently being worked on.
 * **Done:** This column holds all the tasks that have been successfully completed.
 
-<img src="https://github.com/user-attachments/assets/0c7ee2ee-88f6-4994-8aba-4193889e15a9" width="700" height="500">
+<img src="https://github.com/user-attachments/assets/77e85b0b-63fe-44d5-8fdb-6e461f5f6c69" width="700" height="500">
 
 
 
@@ -273,6 +273,32 @@ The target audience for BlackFriday Market consists of:
 
 
 ## Testing and validation 
+
+## Lighthouse Audit:
+***
+#### I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+###  On Desktop
+
+#### Home
+<img src="https://github.com/user-attachments/assets/e561abe6-bad1-4fcf-9490-412902cb5406" width="600" height="300">
+
+#### All Products
+<img src="https://github.com/user-attachments/assets/d79312b8-6af5-43a3-af0c-7b8fe9e68447" width="600" height="300">
+
+#### Add Product
+<img src="https://github.com/user-attachments/assets/f3d640f6-8207-498d-b259-9adfcf84424a" width="600" height="300">
+
+###  On Mobile
+
+#### Home
+<img src="https://github.com/user-attachments/assets/f6152237-dd50-43f0-b887-2b467449a939" width="800" height="200">
+
+#### All Products
+<img src="https://github.com/user-attachments/assets/9e8c1509-7df1-448f-93a5-2c2206463c01" width="800" height="200">
+
+#### Add Product
+<img src="https://github.com/user-attachments/assets/61233fa1-428c-438e-8421-71e885bd8346" width="800" height="200">
 
 
 ## CSS
