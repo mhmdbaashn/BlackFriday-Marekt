@@ -31,6 +31,7 @@ def product_create(request):
             product = form.save(commit=False)
             product.seller = request.user  
             form.save()
+            messages.success(request, "The product has been successfully added!")
             return redirect('product_list')
     else:
         form = ProductForm()
@@ -50,6 +51,7 @@ def product_update(request, pk):
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
             form.save()
+            messages.success(request, "The product has been updated successfully.")
             return redirect('product_list')
     else:
         form = ProductForm(instance=product)
@@ -68,5 +70,6 @@ def product_delete(request, pk):
         return redirect('product_list')
     if request.method == 'POST':
         product.delete()
+        messages.success(request, "The product has been deleted successfully.")
         return redirect('product_list')
     return render(request, 'market/product_delete.html', {'product': product})
