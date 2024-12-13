@@ -119,8 +119,14 @@ The target audience for BlackFriday Market consists of:
 #### During the development of the BlackFriday Market website, I implemented an Agile methodology and utilised a Kanban board on GitHub linked to my repository.
 
 
+
+
 ## Kanban Board Overview
 ---
+
+* **To do:** This column contains user stories that are ready for development.
+* **In Progress:** This column tracks user stories currently being worked on.
+* **Done:** This column holds all the tasks that have been successfully completed.
 
 <img src="https://github.com/user-attachments/assets/0c7ee2ee-88f6-4994-8aba-4193889e15a9" width="700" height="500">
 
