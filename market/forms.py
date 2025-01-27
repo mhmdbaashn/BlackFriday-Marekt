@@ -7,8 +7,8 @@ class ProductForm(forms.ModelForm):
     """
     class Meta:
         model = Product
-        fields = ['category', 'name', 'description', 'featured_image', 'price', 'discount_price', 'stock', 'available', 'seller']
-
+        fields = ['category', 'name', 'description', 'price', 'discount_price', 'stock', 'available', 'featured_image']
+        
     # Validate that the regular price is not negative
     def clean_price(self):
         price = self.cleaned_data.get('price')
