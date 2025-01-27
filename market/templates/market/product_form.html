@@ -10,7 +10,7 @@
                 :: Add New Product ::
             {% endif %}
         </h2>
-        
+
         <!-- Displaying messages -->
         {% if messages %}
             <div class="alert alert-success">
@@ -23,7 +23,22 @@
         <!-- Product form -->
         <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
             {% csrf_token %}
-            {{ form.as_p }}
+            
+            <!-- Render each field with its errors -->
+            {% for field in form %}
+                <div class="mb-3">
+                    <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                    {{ field }}
+                    {% if field.errors %}
+                        <div class="alert alert-danger">
+                            {% for error in field.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            
             <button type="submit" class="btn btn-primary w-100 mb-5">
                 {% if product %}
                     Update Product

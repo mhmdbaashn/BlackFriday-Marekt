@@ -34,9 +34,12 @@ def product_create(request):
             product = form.save(commit=False)
             product.seller = request.user
             form.save()
-            messages.success
-            (request, "The product has been successfully added!")
+            # Add a success message
+            messages.success(request, "The product has been successfully added!")
             return redirect('product_list')
+        else:
+            # Add an error message if form is invalid
+            messages.error(request, "There was an error adding the product. Please fix the issues and try again.")
     else:
         form = ProductForm()
     return render(request, 'market/product_form.html', {'form': form})
@@ -53,15 +56,19 @@ def product_update(request, pk):
         messages.error(request, "You are not allowed to modify this product.")
         return redirect('product_list')
     if request.method == 'POST':
-        form = ProductForm(request.POST, instance=product)
+        form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success
-            (request, "The product has been updated successfully.")
+            # Add a success message
+            messages.success(request, "The product has been successfully updated!")
             return redirect('product_list')
+        else:
+            # Add an error message if form is invalid
+            messages.error(request, "There was an error updating the product. Please fix the issues and try again.")
     else:
         form = ProductForm(instance=product)
-        return render(request, 'market/product_form.html', {'form': form, 'product': product})
+    return render(request, 'market/product_form.html', {'form': form, 'product': product})
+
 
 
 @login_required
