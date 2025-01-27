@@ -61,8 +61,7 @@ def product_update(request, pk):
             return redirect('product_list')
     else:
         form = ProductForm(instance=product)
-        return render
-    (request, 'market/product_form.html',  {'form': form, 'product': product})
+        return render(request, 'market/product_form.html', {'form': form, 'product': product})
 
 
 @login_required
