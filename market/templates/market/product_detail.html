@@ -4,12 +4,11 @@
 <div class="container mt-5">
     <div class="row mt-5">
         <div class="col-md-6">
-
-        {% if product.featured_image and product.featured_image.url %}
-            <img src="{{ product.featured_image.url }}" class="img-fluid rounded" alt="{{ product.name }}">
-        {% else %}
-            <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="No Image">
-        {% endif %}
+            {% if product.featured_image and product.featured_image.url %}
+                <img src="{{ product.featured_image.url }}" class="img-fluid rounded" alt="{{ product.name }}">
+            {% else %}
+                <img src="https://dummyimage.com/400x300/000/fff&text=Black+Friday+Market" class="img-fluid rounded" alt="No Image">
+            {% endif %}
         </div>
         <div class="col-md-6 mt-5">
             <h3 class="text-center text-success mb-5">{{ product.name }}</h3>
@@ -17,15 +16,106 @@
             <h6 class="text-primary">Discount Price: €{{ product.discount_price }}</h6>
             <p><strong>Description:</strong> {{ product.description }}</p>
             <p><strong>Stock:</strong> {{ product.stock }}</p>
-            <div  class="text-center">
-                <a href="{% url 'product_update' product.pk %}" class="btn btn-outline-primary mt-3 me-3 px-4">Edit Product</a>
-                <a href="{% url 'product_delete' product.pk %}" class="btn btn-outline-primary mt-3">Delete Product</a>
-                <div class="div mt-5 mb-5">
-
-                </div>
+            
+            <div class="text-center">
+                {% if user.is_superuser or product.seller == user %}
+                    <!-- Only show Edit and Delete buttons to the seller or admin -->
+                    <a href="{% url 'product_update' product.pk %}" class="btn btn-outline-primary mt-3 me-3 px-4">Edit Product</a>
+                    <a href="{% url 'product_delete' product.pk %}" class="btn btn-outline-danger mt-3">Delete Product</a>
+                {% endif %}
             </div>
-         
         </div>
     </div>
-</div>
+    <!-- Reviews Section -->
+    <div class="mt-4 mb-5">
+        <h4>Reviews ({{ product.reviews.count }})</h4>
+        {% for review in product.reviews.all %}
+            <div class="review">
+                <p><strong>{{ review.user.username }}:</strong> 
+                    <span>
+                        {% for i in rating_range %}
+                            {% if i <= review.rating %}
+                                <i class="fas fa-star text-warning"></i>
+                            {% else %}
+                                <i class="far fa-star text-secondary"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </span>
+                </p>
+                <p>{{ review.comment }}</p>
+                <hr>
+            </div>
+        {% empty %}
+            <p>No reviews yet. Be the first to review this product!</p>
+        {% endfor %}
+
+        <!-- Add New Review -->
+        <h5 class="mt-5">Add Your Review</h5>
+        <form method="POST">
+            {% csrf_token %}
+            
+            <!-- Star Rating System -->
+            <div class="rating mb-3">
+                {% for i in rating_range %}
+                    <span data-value="{{ i }}" class="star">
+                        <i class="far fa-star"></i>
+                    </span>
+                {% endfor %}
+            </div>
+            
+            <!-- Hidden Rating Field -->
+            {{ form.rating }}
+            
+            <!-- Comment Field -->
+            {{ form.comment }}
+            <br> <br>
+            
+            <button type="submit" class="btn btn-primary mb-5">Submit Review</button>
+        </form>
+        
+    </div>
+
+
+<script>
+    // JavaScript for the Star Rating System
+    const stars = document.querySelectorAll('.rating .star');
+    const ratingInput = document.querySelector('input[name="rating"]');
+    const commentInput = document.querySelector('textarea[name="comment"]');
+    const submitButton = document.querySelector('button[type="submit"]');
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const ratingValue = star.getAttribute('data-value');
+            ratingInput.value = ratingValue;
+
+            // Update the appearance of the stars
+            stars.forEach(s => {
+                if (s.getAttribute('data-value') <= ratingValue) {
+                    s.innerHTML = '<i class="fas fa-star text-warning"></i>';
+                } else {
+                    s.innerHTML = '<i class="far fa-star text-secondary"></i>';
+                }
+            });
+        });
+    });
+
+    // Disable the submit button initially
+    submitButton.disabled = true;
+
+    // Check if both rating and comment are provided
+    function validateForm() {
+        if (ratingInput.value && commentInput.value.trim()) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+
+    // Listen for changes on both the rating and comment fields
+    ratingInput.addEventListener('change', validateForm);
+    commentInput.addEventListener('input', validateForm);
+
+    // Call the validate function on page load
+    validateForm();
+</script>
 {% endblock %}

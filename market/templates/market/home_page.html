@@ -4,6 +4,10 @@
 {% block content %}
 <div class="background-image text-center content mt-5">
 
+
+    
+    
+
     <!-- Row containing the image and title -->
     <div class="row align-items-center mb-5">
         <!-- First column: text -->
@@ -24,8 +28,39 @@
     </div>
     </div>
 
+
+    <!-- Featured Products Section -->
+    <section id="featured-products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-primary fw-bold">Featured Products</h2>
+            <div class="row">
+                {% for product in featured_products %}
+                    <div class="col-md-3 mb-2">
+                        <div class="card">
+                            {% if product.featured_image %}
+                                <img src="{{ product.featured_image.url }}" alt="{{ product.name }}" class="card-img-top" style="max-height: 300px; object-fit: cover; width: 100%;">
+                            {% else %}
+                                <img src="https://res.cloudinary.com/dnkkh4kio/image/upload/v1734098269/cd_sh4ljc.jpg" alt="Placeholder" class="card-img-top" style="height: 300px; object-fit: cover;">
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <br>
+                                <a href="{% url 'product_detail' product.pk %}" class="btn btn-primary mt-2">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <div class="alert alert-success text-center mt-1 mb-5" role="alert">
+        <strong>Special Offer:</strong> Get 20% off on your first purchase!
+    </div>
+
     <!-- Statistics Section -->
-    <section id="stats" class="stats bg-light mt-5">
+    <section id="stats" class="stats bg-light mb-5 ">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 stat text-center">
@@ -46,7 +81,79 @@
             </div>
         </div>
     </section>
+
+
+
+    <section id="testimonials" class="py-5 bg-primary mb-5">
+        <div class="container">
+          <h3 class="text-center  text-light  fw-bold mb-5">What Our Customers Say</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="testimonial p-4 rounded shadow-sm bg-white text-center">
+                <p class="mb-3 fs-5 fst-italic">"Great experience! Will buy again."</p>
+                <p class="text-muted fw-semibold">- John Doe</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial p-4 rounded shadow-sm bg-white text-center">
+                <p class="mb-3 fs-5 fst-italic">"Amazing service, highly recommended!"</p>
+                <p class="text-muted fw-semibold">- Jane Smith</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial p-4 rounded shadow-sm bg-white text-center">
+                <p class="mb-3 fs-5 fst-italic">"Quick delivery and excellent quality."</p>
+                <p class="text-muted fw-semibold">- Alice Brown</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section id="coming-soon" class="py-5 bg-dark text-light mb-5 ">
+        <div class="container">
+            <h3 class="text-center mb-5 text-warning fw-bold">Coming Soon</h3>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card bg-dark text-light shadow-sm border-warning">
+                        <div class="card-body">
+                            <i class="fas fa-box fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">New Product Category</h5>
+                            <p class="card-text">Exciting new products are on their way. Stay tuned!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card bg-dark text-light shadow-sm border-warning">
+                        <div class="card-body">
+                            <i class="fas fa-gift fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Special Discounts</h5>
+                            <p class="card-text">Exclusive deals and offers will be available soon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card bg-dark text-light shadow-sm border-warning">
+                        <div class="card-body">
+                            <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Customer Rewards</h5>
+                            <p class="card-text">Earn rewards and points with every purchase. Launching soon!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="lead">Want to be the first to know? <a href="{% url 'account_signup' %}" class="text-warning text-decoration-underline">Sign up now!</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+
 </div>
 
+<br><br><br>
 
 {% endblock %}

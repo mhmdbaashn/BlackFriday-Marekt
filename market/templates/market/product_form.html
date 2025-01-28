@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="col-12 col-md-8 col-lg-6">
+<div class="container" style="min-height: 80vh;">
+    <div class="col-12 col-md-8 col-lg-6 mx-auto">
         <h2 class="mb-3 text-primary text-center">
             {% if product %}
                 Edit Product: {{ product.name }}
@@ -12,13 +12,13 @@
         </h2>
 
         <!-- Displaying messages -->
-    {% if messages %}
-    <div class="alert alert-success">
-        {% for message in messages %}
-            <p>{{ message }}</p>
-        {% endfor %}
-    </div>
-{% endif %}
+        {% if messages %}
+        <div class="alert alert-success">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
 
         <!-- Product form -->
         <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
@@ -49,11 +49,24 @@
         </form>
     </div>
 </div>
-
+<br><br>
 <style>
+    /* Media queries for better responsiveness */
     @media (max-width: 576px) {
         .container {
             padding: 1rem;
+        }
+
+        /* Adjust heading size on smaller screens */
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* For medium-sized screens (e.g., tablets) */
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.75rem;
         }
     }
 </style>

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product
+from .models import Product, Review
 
 class ProductForm(forms.ModelForm):
     """
@@ -33,5 +33,28 @@ class ProductForm(forms.ModelForm):
         if price is not None and discount_price is not None:
             if discount_price >= price:
                 self.add_error('discount_price', "Discount price must be less than the regular price.")
+        
+        return cleaned_data
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['rating', 'comment']
+        widgets = {
+            'rating': forms.HiddenInput(),  # The rating field will be handled via JavaScript
+            'comment': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Add your comment here...'}),
+        }
+    
+    # You can add validation if needed
+    def clean(self):
+        cleaned_data = super().clean()
+        rating = cleaned_data.get('rating')
+        comment = cleaned_data.get('comment')
+
+        if not rating or not comment:
+            raise forms.ValidationError("Both rating and comment are required.")
+
+        if rating not in range(1, 6):
+            raise forms.ValidationError('Rating must be between 1 and 5.')
         
         return cleaned_data
