@@ -127,7 +127,7 @@ The target audience for BlackFriday Market consists of:
 * **In Progress:** This column tracks user stories currently being worked on.
 * **Done:** This column holds all the tasks that have been successfully completed.
 
-<img src="https://github.com/user-attachments/assets/77e85b0b-63fe-44d5-8fdb-6e461f5f6c69" width="700" height="500">
+<img src="https://github.com/user-attachments/assets/a80102d8-ee80-40a0-b021-98baf3cf0a05" width="700" height="500">
 
 
 ## Design Choices:
@@ -271,23 +271,6 @@ The target audience for BlackFriday Market consists of:
 
 2. **Checkout Process** :
       * Support Multiple Payment Methods, Payment Security and Payment Confirmation.
-
-### Technology used
-***
-
-   * Django: Web framework for building the site.
-   * Heroku: Platform for hosting and deployment.
-   * HTML & CSS: For page structure and custom styling.
-   * Bootstrap 5: Ensures responsive design.
-   * Python: Backend logic and processing.
-   * JavaScript: Additional functionality, like checking passwords to match during log in.
-   * PostgreSQL: Relational database system.
-   * Cloudinary: Image hosting service.
-   * Font Awesome: Icons for UI enhancement.
-   * Google Fonts: Custom typography.
-   * GitHub: Source code repository and agile project methodology.
-   * Git: Version control for code management.
-   * Goog
 
 
 ## Testing and validation 
