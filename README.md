@@ -115,10 +115,15 @@ The target audience for BlackFriday Market consists of:
 
 ## Agile Development
 ---
-#### During the development of the BlackFriday Market website, I implemented an Agile methodology and utilised a Kanban board on GitHub linked to my repository.
+#### During the development of the BlackFriday Market website, I implemented an Agile methodology and I applied MoSCoW Prioritization to effectively classify tasks based on their importance and urgency. Asutilised a Kanban board on GitHub linked to my repository. 
 
 
+## MoSCoW Prioritization
 
+* **Must Have**
+* **Should Have**
+* **Could Have**
+* **Won't Have**
 
 ## Kanban Board Overview
 ---
@@ -143,38 +148,48 @@ The target audience for BlackFriday Market consists of:
 #### Poppins', sans-serif;
 
 
-## User Stories Overview
+## Epic, Milestons and User Stories Overview
 ***
-1. Title: Registration (Sign Up).
-   * AC1 Given an email a user can register an account.
-   * AC2 Then the user can log in.
-   * AC3 When the user is logged in they can add his products.
+### Epic 1 : Authentication System
+* User Story: Design Navbar 
+"As a guest, I want to see a homepage with clear information about the store."
+* User Stor : Home Page 
 
-2. Title: Hero Section
-   *  AC1 A hero Image with welcoming message .
-   *  AC2 The call-to-action button redirects to the registration page.
+### Epic 2 : User Interface (UI)
+* User Story : Sign Up "As a guest, I want to be able to create a new account so I can use the site."
+* User Story: Login
+"As a user, I want to be able to log in using my email and password."* User Stor : Design Navbar
+* User Story: Logout
+"As a logged-in user, I want to be able to log out of my account."
+
+### Epic 3 : Product Management (CRUD)
+* User Story : Add Product
+"As an admin or Seller, I want to be able to add a new product to the store."
+* User Story : Edit Product
+"As an admin or Seller, I want to be able to edit a product’s details."
+* User Story : Delete Product
+"As an admin or Seller, I want to be able to delete a product."
+
+### Epic 4 : Impoving User Experience (UX)
+
+* User Story : Prevent Negative Values in Price Input 
+ As a user, I want to be prevented from entering negative values for product price and discount price, So that I ensure valid pricing information is entered.
+* User Story :  negative values and notification
+I want to receive a notification if I enter a negative value for the product price.
+* User Story : Validate Discount Price Compared to Product Price 
+As a user, I want to show an error message if the discount price is greater than or equal to the original product price,
+So that the discount makes logical sense.
+* User Story : Display Featured Products Section on Homepage
+I want to see a "Featured Products" section on the homepage, So that I can quickly discover special or recommended products.
+* User Story : Display Banners on Homepage for Promotions or Offers 
+As a user, I want to see promotional banners on the homepage, so that I can be informed about ongoing offers and discounts.
+
+### Epic 5 : Adding New Features (Review Rating and commets on Products)
+* User Story : Express about the products by rating review and adding comments.
+I want to express my interest in a product by rating review or adding comment so I can value product that I used it .
 
 
-3. Title: Navigation
-   * AC1 When clicking the index link, the user is always taken to the landing page.
-   * AC2  When clicking the Registration link, the user is always taken to the registration page.
-   * AC3 When clicking the Log In link, the user is taken to the login page.
-   * AC4 When clicking the Log Out link, the user is taken to the log out page.
 
-4. Title: Footer
-   * AC1 When clicking on social media icons the user is taken to new page . 
-
-5. Title: Product Management .
-   * AC1 Given a logged in user, they can create a product.
-   * AC2 Given a logged in user, they can read a product .
-   * AC3 Given a logged in user, they can update a product.
-   * AC4 Given a logged in user, they can delete a product.
-
-6. Title: Log in 
-
-   * AC1 login form with fields for username and password is available.
-   * AC2 The form displays error messages for incorrect credentials.
-   * AC3 Successful login redirects to the user's dashboard with a welcome message.
 
 
 
@@ -349,59 +364,19 @@ The target audience for BlackFriday Market consists of:
 
 ### Home Page 
 
-| Test | Result |
-| --- | --- |
-| Products displayed as cards | Pass |
-| Redirect after successful login | Pass |
-| User must be logged in to add/edit/delete product | Pass |
-| Ability to click on a product card | Pass |
-| Edit and delete product functionality | Pass |
-| Prevention of editing other users' product | Pass |
-| Prevention of deleting other users' product | Pass |
-
-
-### Footer/Navbar 
-
-| Test | Result | 
-| --- | --- |
-| Navigation links functionality | Pass |
-| Social media links functionality | Pass |  
-
-
-### Login Page 
-
-| Test | Result |
-| --- | --- |
-| Secure login functionality | Pass |
-| Redirect after successful login | Pass |
-
-
-
-### Registration Page  
-
-| Test | Result |
-| --- | --- |
-| Secure signup functionality | Pass |
-| Redirect after successful registration | Pass |
-
-
-### Logout Page 
-
-
-| Test | Result |
-| --- | --- |
-| Logout functionality` | Pass |
-| Redirect after successful logout | Pass |
-
-
-
-
-###  Security
-
-| Test | Result |
-| --- | --- |
-| Prevention of brute force actions via URL | Pass |
-| Redirect to sign-in page after attempted unauthorized action | Pass |
+| Test | ACTION | EXPECTATION | RESULT |
+| --- | --- | --- | --- |
+| Navbar logo Link | Logo link clicked | When click on it goes to the home page | Worked as expected |
+| Navbar Home Links | Home link clicked | When click on it goes to the home page | Worked as expected |
+| Navbar Login Link | Login link clicked | Get taken to sign in page | Worked as expected |
+| Redirect after successful login | After Sign in Process | When click on it goes to all products page | Worked as expected |
+| Navbar Sign Up Link | Sign Up link clicked | Get taken to Sign Up page | Worked as expected |
+| Navbar logout Link | logout link clicked | Get taken to Sign Out page | Worked as expected |
+| Redirect after successful logout | After Sign out Process | When click on it goes to  homepage page | Worked as expected |
+| Navbar Add Product | Add Product link clicked | Get taken to add product page | Worked as expected |
+| Edit and delete product functionality |  links clicked(dosen't apperar to any user expect the product woner ) | When click on it goes to  Edit or Delete page | Worked as expected |
+| Navbar All Products | All Products link clicked | Get taken to All products page | Worked as expected |
+| Social media links functionality | Social media links clicked | Get taken to Social media pages | Worked as expected |
 
 
 
