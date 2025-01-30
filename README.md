@@ -158,7 +158,7 @@ The target audience for BlackFriday Market consists of:
 ### Epic 2 : User Interface (UI)
 * User Story : Sign Up "As a guest, I want to be able to create a new account so I can use the site."
 * User Story: Login
-"As a user, I want to be able to log in using my email and password."* User Stor : Design Navbar
+"As a user, I want to be able to log in using my email and password."
 * User Story: Logout
 "As a logged-in user, I want to be able to log out of my account."
 
